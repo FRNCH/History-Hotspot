@@ -1,4 +1,4 @@
 # History-Hotspot
-The following is a personal website that I am developing.
+The following is a website that I am developing for an instructor. It is, as of 11-18-2015, intended to serve two main functions. First, the site is intended to serve as a means of distributing course-related content to students free of any and all dependencies on BlackBoard. Second, it is intended to serve as a means of allowing the instructor to share information that qualifies as either cultural enrichment or current events, including photos from past travels, personal accounts from travels, general information about select regions of the world, information regarding current events, links to recent news articles and videos, and more (this is examples and is not all-inclusive).
 
 It may be referenced for the sake of educational purposes only. I do not grant permission for any content contained within this project, in part or in full, to be used for commercial purposes. I retain all rights to the material contained within the project.
