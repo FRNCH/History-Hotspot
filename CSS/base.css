@@ -1,0 +1,379 @@
+/*******************************************************************************************************************
+ *******************************************************************************************************************
+ ****************************** GENERAL PAGE CONTENT SPECIFICATIONS
+ *******************************************************************************************************************
+*******************************************************************************************************************/
+*,
+*:before,
+*:after {
+    z-index: 0;
+}
+
+html, body {
+    /*** Grid ***/
+    height: 100%;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+    
+    /*** Typography ***/
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12pt;
+    
+    /*** Stylization ***/
+    /*background: #080808;*/
+    background: #181818;
+}
+
+#wrap-page {
+    height: 100%;
+    width: 100%;
+    min-height: 100%;
+    min-width: 100%;
+    position: absolute;
+}
+
+#wrap-header,
+#wrap-nav-content,
+#wrap-footer {
+    width: 100%;
+}
+
+
+p {
+    font-family: "Open Sans", sans-serif;
+}
+
+/*******************************************************************************************************************
+ *******************************************************************************************************************
+ ****************************** FREQUENTLY USED CLASSES
+ *******************************************************************************************************************
+*******************************************************************************************************************/
+
+.centeredElem {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.centeredText {
+    text-align: center;
+}
+
+.centered {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.border {
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+}
+
+.btn {
+    /*** Grid ***/
+    margin: 4px;
+    margin-bottom: 8px;
+    padding: 5px;
+    
+    /*** Typography ***/
+    text-transform: uppercase;
+    /*font-size: 125%;*/
+    font-weight: 600;
+    
+    /*** Stylization ***/
+    transition: background 2s ease-in-out;
+    -webkit-transition:  background 2s ease-in-out;    
+}
+
+.btn:focus {
+    /*** Stylization ***/
+    outline: 0;
+}
+
+.btn-primary {
+    /*** Grid ***/
+    padding: 0px;
+    margin: 0;
+    
+    /*** Typography ***/
+    font-size: 125%;
+    
+    /*** Stylization ***/
+    width: 100%;
+    padding: 0;
+}
+
+.noselect {
+    user-select: none;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+    -moz-user-select: none;
+}
+
+/*******************************************************************************************************************
+ *******************************************************************************************************************
+ ****************************** GENERAL HEADER SPECIFICATIONS
+ *******************************************************************************************************************
+*******************************************************************************************************************/
+
+#wrap-header {
+    /*** Grid ***/
+    height: 15%;
+    min-height: 5em;
+    color: white;
+}
+
+#wrap-header header {
+    /*** Grid ***/
+    height: 100%;
+    min-height: 100%;
+}
+
+#wrap-header header h1 {
+    /*** Grid ***/
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    /*** Typography ***/
+    font-size: 200%;
+}
+
+/*******************************************************************************************************************
+ *******************************************************************************************************************
+ ****************************** GENERAL NAVBAR SPECIFICATIONS
+ *******************************************************************************************************************
+*******************************************************************************************************************/
+
+#wrap-nav {
+    /*** Grid ***/
+    height: auto;
+    
+    /*** Stylization ***/
+    background: transparent;
+}
+
+#navMenu {
+    /*** Stylization ***/
+    background: #ffffff;
+}
+
+#navMenu a {
+    /*** Stylization ***/
+    text-decoration: none;
+    color: inherit;
+}
+
+#navMenu a:visited {
+    text-decoration: none;
+    color: inherit;
+}
+
+#navMenu li {
+    /*** Grid ***/
+    display: block;
+    padding-top: 0.1em;
+    padding-bottom: 0.1em;
+    
+    /*** Stylization ***/
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+#menuTab {
+    visibility: hidden;
+}
+
+/*
+    Although the submenu-toggle and submenu class specifications could be placed with the commonly used classes, they
+        are only intended to be used in the navigation bar. Given that, they have been included in the navbar section 
+        for the sake of organization.
+*/
+.submenu-toggle input {
+    display: none;
+}
+
+.submenu {
+    display: none;
+}
+
+/*******************************************************************************************************************
+ *******************************************************************************************************************
+ ****************************** GENERAL CONTENT SPECIFICATIONS
+ *******************************************************************************************************************
+*******************************************************************************************************************/
+
+#wrap-content {
+    /*** Grid ***/
+    padding-top: 11.75%;
+}
+
+/*******************************************************************************************************************
+ *******************************************************************************************************************
+ ****************************** GENERAL FOOTER SPECIFICATIONS
+ *******************************************************************************************************************
+*******************************************************************************************************************/
+#wrap-footer {
+    /*** Grid ***/
+    width: 100%;
+    height: 100%;
+    max-height: 15%;
+    margin-top: 2%;
+    border-top-style: solid;
+    border-top-color: #090300;
+    border-top-width: 2px;
+}
+
+#wrap-footer footer {
+    /*** Grid ***/
+    height: 100%;
+}
+
+/*******************************************************************************************************************
+ *******************************************************************************************************************
+ ****************************** MEDIA QUERIES
+ *******************************************************************************************************************
+*******************************************************************************************************************/
+
+/* larger screens */
+@media only screen and (min-width: 992px) {
+/********************
+    General page specifications for larger screens
+********************/
+html, body {
+    /*** TYPOGRAPHY ***/
+    font-size: 12pt;
+}
+
+/********************
+    Navigation bar specifications for larger screens
+********************/
+
+#navMenu {
+    width: 100%;
+}
+
+.menu-option {
+    width: 15%;
+}
+
+#navMenu ul li {
+    display: inline-block;
+}
+
+#navMenu .submenu {
+    /*** Grid ***/
+    position: absolute;
+}
+
+#menuTab, #menuTab * {
+    /*** Grid ***/
+    width: 0px;
+    height: 0px;
+    overflow: hidden;
+}
+
+#wrap-menuTab {
+    visibility: hidden;
+    height: 0px;
+}
+
+/********************
+    General content region specifications for larger screens
+********************/
+#wrap-content {
+    padding-top: 0;
+}
+
+}
+
+/*small to medium screens*/
+@media only screen and (min-width: 481px) and (max-width: 991px)  {
+
+}
+
+/*Phones and tiny screens*/
+@media only screen and (max-width: 480px) {
+    
+/********************
+    General page specifications for tiny screens
+********************/
+html, body {
+    font-size: 15pt;
+}
+
+/********************
+    General header specifications for tiny screens
+********************/
+#wrap-header {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 600;
+    font-size: 125%;
+}
+
+/********************
+    Navigation bar specifications for tiny screens
+********************/
+#menuTab {
+    visibility: visible;
+    max-width: 100%;
+}
+
+#wrap-nav {
+    position: absolute;
+    width: 100%;
+}
+
+#navMenu {
+    display: none;
+    /*set a background color. It is set by default to be transparant.*/
+    height: auto;
+    width: 100%;
+}
+
+ #navMenu .btn {
+    width: 95%;
+}
+
+#navMenu li:first-of-type {
+    /*** Grid ***/
+    margin-top: 0;
+}
+
+#navMenu .submenu:last-of-type {
+    /*** Grid ***/
+    margin-bottom: 0.1em;
+}
+
+#menuTab {
+    /*** Grid ***/
+    display: inline-block;
+    z-index: 2;
+    margin-top: 0px;
+    padding: 2px;
+    
+    /*** Typography ***/
+    color: #FFFFFF;
+    
+    /*** Stylization ***/
+    border: none;
+    border-radius: 3px;
+    background: linear-gradient(#999999, #333333);
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px; /*these radius specifications need to be moved to the landscape orientation media queries*/
+}
+
+#menuTab:hover {
+    /*** Stylization ***/
+    background: linear-gradient(#AAAAAA, #444444);
+}
+
+#menuTab input {
+    /*** Grid ***/
+    display: none;
+}
+
+}

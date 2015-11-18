@@ -1,0 +1,204 @@
+#wrap-header {
+    display: flex;
+    display: -webkit-flex;
+    align-items:center;
+    justify-content:center;
+    text-align: left;
+}
+
+#wrap-header header img {
+    position: fixed;
+    left: 50%;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    
+    transform: translateX(-50%);
+    height: 33vw;
+        
+}
+
+#wrap-slideNav,
+#nav,
+#wrap-slideNav .slidebar {
+    width: 100%;
+}
+
+#wrap-slideNav {
+    position: fixed;
+    bottom: 2vw;
+}
+
+#nav, #slidebar {
+    height: 10vw;
+    max-height: 10vw;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+#previousButton,
+#nextButton {
+    display: inline-block;
+    /*margin: 3.333vw;*/
+    /*height: 3.333vw;*/
+    /*width: 9.985vw;*/
+    width: 5.333vw;
+    height: 10vw;
+    background: #212121;
+    top: 50%;
+    transform: translateY(-50%);
+    
+    color: #FFFFFF;
+    
+    /*border-radius: 50%;*/
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+    transition: all 0.15s ease;
+    cursor: default;
+}
+
+#previousButton {
+    position: absolute;
+    /*background: linear-gradient(to left, #282828 0%, #151515 80%, #131313 100%);*/
+    left: 4.65vw;
+    z-index: 1;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+}
+
+#nextButton {
+    /*background: linear-gradient(to right, #282828 5%, #080808 80%, #080808 100%);*/
+    position: absolute;
+    right: 4.65vw;
+    z-index: 1;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+
+#previousButton p,
+#nextButton p {
+    position: relative;
+    text-align: center;
+    font-size: 5.333vw;
+    display: block;
+    transform: translate(0%, 30%);
+}
+
+#previousButton:hover { /*5.333vw*/
+    /*border-left-color: #126180;
+    border-left-style: solid;
+    border-left-width: 0.15vw;*/
+    box-shadow: -1px 0px 1px #126180; /*######### FIND OUT WHETHER THIS OR THE BORDER METHOD IS PREFERRED!!!!!!!*/
+    left: 4.35vw;
+    background: #252525;
+}
+
+#nextButton:hover {
+    border-right-color: #126180;
+    border-right-style: solid;
+    border-right-width: 0.15vw;
+    right: 4.35vw;
+    background: #252525;
+}
+
+#previousButton:hover, 
+#nextButton:hover {
+    color: #126180;
+    width: 5.533vw;
+}
+
+#slidebar {
+    display: block;
+    z-index: 0;
+    
+    margin-left: 9.985vw;
+    margin-right: 9.985vw;
+}
+
+#slidebar .menu-option:first-of-type { border-left-style: none;}
+
+#wrap-slideNav .menu-option {
+    display: inline-block;
+    position: relative;
+    
+    font-size: 3vw;
+    white-space: normal;
+    
+    text-align: center;
+    width: 19.99vw;
+    min-width: 19.99vw;
+    min-height: 10vw;
+    max-height: 10vw;
+    
+    border-style: solid;
+    border-color: #080808;
+    border-width: 0.1vw;
+    border-top-style: none;
+    
+    background: #FFFFFF;
+    overflow: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background: #126180;
+    
+    overflow: hidden;
+}
+
+#wrap-slideNav #nav /*#slidebar*/ {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 2.5vw;
+}
+  
+#wrap-slideNav .menu-option .caption {
+    position: absolute;
+    z-index: 9999; 
+    width: 19.97vw;
+    padding-bottom: 0.1em;
+    padding-left: 0.1em;
+    padding-right: 0.1em;
+    border-top-style: solid;
+    border-top-color: #080808;
+    border-top-width: 0.1vw;
+    height: 10vw;
+    background: rgba(18, 97, 128, 1);
+    color: white;
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    justify-content: center;
+    
+    /*-webkit-transition: margin 0.35s ease, background 0.35s ease;*/
+
+}
+
+#wrap-slideNav .menu-option:hover .caption .char:nth-of-type(0) { animation: charAnim 3.5s ease 0s infinite; }
+#wrap-slideNav .menu-option:hover .caption .char:nth-of-type(1) { animation: charAnim 3.5s ease 0.25s infinite; }
+#wrap-slideNav .menu-option:hover .caption .char:nth-of-type(2) { animation: charAnim 3.5s ease 0.5s infinite; }
+#wrap-slideNav .menu-option:hover .caption .char:nth-of-type(3) { animation: charAnim 3.5s ease 0.75s infinite; }
+#wrap-slideNav .menu-option:hover .caption .char:nth-of-type(4) { animation: charAnim 3.5s ease 1.0s infinite; }
+#wrap-slideNav .menu-option:hover .caption .char:nth-of-type(5) { animation: charAnim 3.5s ease 1.25s infinite; }
+#wrap-slideNav .menu-option:hover .caption .char:nth-of-type(6) { animation: charAnim 3.5s ease 1.5s infinite; }
+#wrap-slideNav .menu-option:hover .caption .char:nth-of-type(7) { animation: charAnim 3.5s ease 1.75s infinite; }
+#wrap-slideNav .menu-option:hover .caption .char:nth-of-type(8) { animation: charAnim 3.5s ease 2.0s infinite; }
+#wrap-slideNav .menu-option:hover .caption .char:nth-of-type(9) { animation: charAnim 3.5s ease 2.25s infinite; }
+#wrap-slideNav .menu-option:hover .caption .char:nth-of-type(10) { animation: charAnim 3.5s ease 2.5s infinite; }
+#wrap-slideNav .menu-option:hover .caption .char:nth-of-type(11) { animation: charAnim 3.5s ease 2.75s infinite; }
+
+
+@keyframes charAnim {
+    0% {
+        transform: translateY(0);
+    }
+    20% {
+        transform: translateY(-0.65vw);
+    }
+    40% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
