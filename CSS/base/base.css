@@ -3,6 +3,10 @@
  ****************************** GENERAL PAGE CONTENT SPECIFICATIONS
  *******************************************************************************************************************
 *******************************************************************************************************************/
+/*
+    The following are general specifications that are not page-specific. This is, in essence, the file containing the 
+    website's base style specifications.
+*/
 *,
 *:before,
 *:after {

@@ -11,6 +11,7 @@ $("document").ready(function () {
         if (scrollPos > maxScrollRight - $("#slidebar").width()) {
             scrollPos = maxScrollRight - scrollAmount * 4;
         }
+
         $("#slidebar").animate({
             scrollLeft: scrollPos
         });

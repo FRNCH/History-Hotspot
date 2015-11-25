@@ -1,32 +1,20 @@
-#wrap-header {
-    display: flex;
-    display: -webkit-flex;
-    align-items:center;
-    justify-content:center;
-    text-align: left;
-}
+/*TODO: Merge this file with intro.css, as it is simply an extention specifying the stylization for the intro page's navigation
+    bar.*/
 
-#wrap-header header img {
-    position: fixed;
-    left: 50%;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    
-    transform: translateX(-50%);
-    height: 33vw;
-        
-}
-
+/*TODO: figure out why I felt this was necessary to state explicitly.*/
 #wrap-slideNav,
 #nav,
 #wrap-slideNav .slidebar {
     width: 100%;
+    position: relative;
 }
 
 #wrap-slideNav {
+    max-height: 30vh;
+    min-height: 30vh;
+    height: 30vh;
     position: fixed;
-    bottom: 2vw;
+    bottom: 0;
 }
 
 #nav, #slidebar {
@@ -39,18 +27,11 @@
 #previousButton,
 #nextButton {
     display: inline-block;
-    /*margin: 3.333vw;*/
-    /*height: 3.333vw;*/
-    /*width: 9.985vw;*/
     width: 5.333vw;
     height: 10vw;
     background: #212121;
-    top: 50%;
-    transform: translateY(-50%);
     
     color: #FFFFFF;
-    
-    /*border-radius: 50%;*/
     background-size: contain;
     background-repeat: no-repeat;
     
@@ -86,12 +67,12 @@
 }
 
 #previousButton:hover { /*5.333vw*/
-    /*border-left-color: #126180;
+    border-left-color: #126180;
     border-left-style: solid;
-    border-left-width: 0.15vw;*/
-    box-shadow: -1px 0px 1px #126180; /*######### FIND OUT WHETHER THIS OR THE BORDER METHOD IS PREFERRED!!!!!!!*/
-    left: 4.35vw;
-    background: #252525;
+    border-left-width: 0.15vw;
+    left: 4.30vw;
+    
+    
 }
 
 #nextButton:hover {
@@ -145,12 +126,6 @@
     overflow: hidden;
 }
 
-#wrap-slideNav #nav /*#slidebar*/ {
-    position: fixed;
-    left: 0;
-    right: 0;
-    bottom: 2.5vw;
-}
   
 #wrap-slideNav .menu-option .caption {
     position: absolute;
@@ -169,10 +144,8 @@
     display: -webkit-flex;
     align-items: center;
     justify-content: center;
-    
-    /*-webkit-transition: margin 0.35s ease, background 0.35s ease;*/
-
 }
+
 
 #wrap-slideNav .menu-option:hover .caption .char:nth-of-type(0) { animation: charAnim 3.5s ease 0s infinite; }
 #wrap-slideNav .menu-option:hover .caption .char:nth-of-type(1) { animation: charAnim 3.5s ease 0.25s infinite; }

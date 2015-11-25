@@ -1,0 +1,20 @@
+#wrap-header {
+    display: flex;
+    display: -webkit-flex;
+    align-items:center;
+    justify-content:center;
+    text-align: left;
+}
+
+#wrap-header header img {
+    position: relative;
+    left: 50%;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    
+    transform: translateX(-50%);
+    height: 60vh;
+}
