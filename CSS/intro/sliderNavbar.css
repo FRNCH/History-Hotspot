@@ -17,6 +17,14 @@
     bottom: 0;
 }
 
+#wrap-nav {
+    /*** Grid ***/
+    height: auto;
+    
+    /*** Stylization ***/
+    background: transparent;
+}
+
 #nav, #slidebar {
     height: 10vw;
     max-height: 10vw;

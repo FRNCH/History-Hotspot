@@ -21,6 +21,10 @@
         <link href='https://fonts.googleapis.com/css?family=Ubuntu:500,700' rel='stylesheet' type='text/css'>
 
         <!-- Website-specific layouts -->
+        <?
+            /*The base-style.html page is not included here on the basis that this is the intro page and most of the style
+                specifications included via the document are not relevant here. */
+        ?>
         <link rel="stylesheet" href="CSS/base/reset.css" />
         <link rel="stylesheet" href="CSS/base/base.css" />  
         <link rel="stylesheet" href="CSS/intro/intro.css" />
@@ -38,23 +42,21 @@
     <body>
         
         <div id="wrap-page">
-
-            <div id="wrap-nav-content">
-                <div id="page-header">
-                    <div id="wrap-header" class="centered">
-                        <header>
-                            <img src="/files/img/Logo/HistoryHotspot_title_large.png" alt="History Hotspot" />
-                        </header>
-                    </div>
+            <div id="page-header">
+                <div id="intro-header" class="centered">
+                    <header>
+                        <img src="/files/img/Logo/HistoryHotspot_title_large.png" alt="History Hotspot" />
+                    </header>
                 </div>
-                <div id="wrap-slider"><!--
-                    --><?php readfile("pages/Static/sliderNavbar.html"); ?>
-                </div>
-                
             </div>
+            <div id="wrap-slider"><!--
+                --><?php readfile("pages/Static/sliderNavbar.html"); ?>
+            </div>
+            
+        </div>
 
-        </div><!--wrap-page div -->
+    </div><!--wrap-page div -->
 
-        <script type="text/javascript" src="Scripts/intro.js"></script>
+    <script type="text/javascript" src="Scripts/intro.js"></script>
     </body>
 </html>

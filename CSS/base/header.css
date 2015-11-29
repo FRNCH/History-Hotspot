@@ -1,0 +1,109 @@
+/*variables to create for SASS:
+    * standard grey background color
+    * standard content region color
+    * site-specific blue
+    * font colors
+*/
+
+@media screen and (min-width:1200px) {
+
+#wrap-header {
+    position: relative;
+    display: block;
+    width: 100%;
+    background: #252525;
+    
+    clear: both;
+    border-bottom: 1px solid black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom-left-radius: 2.5vw;
+    border-bottom-right-radius: 2.5vw;
+    margin-bottom: 5vh;
+}
+
+
+#wrap-logo {
+    float: left;
+    display: inline-block;
+    margin-left: 1vw;
+    margin-right: 2vw;
+    max-width: 8.5vw;
+    height: 10vw;
+    border-radius: 75%;
+    display: flex;
+    
+    justify-content:center;
+    align-items:middle;
+    transition: box-shadow 0.25s ease;
+    
+}
+
+#wrap-header img {
+    display: inline-block;
+    width: 12vw;
+    padding: 0;
+    margin: 0;
+    
+}
+
+#wrap-header-buttons {
+    /*float: right;*/
+    display: flex;
+    justify-content:center;
+    
+}
+
+#header-left-buttons, #header-right-buttons {
+    margin-right: 1vw;
+    display: flex;
+    justify-contents:center;
+    align-items:middle;
+    
+}
+
+.header-button {
+    display: inline-block;
+    float: left;
+    width: 14vw;
+    height: 9vh;
+    
+    border: 0.1vw solid black;
+    border-radius: 5px;
+    margin-right: 1vw;
+    
+
+
+    text-align: center;
+    font-size: 3.3vh;
+    
+    color: #FFFFFF;
+    background: #126180;
+    display: inline-flex;
+    align-self:center;
+    align-items:center;
+    justify-content:center;
+    transition: all 0.3s ease;
+    
+    color: white;
+    text-decoration: none;
+    /*color: inherit;*/
+    /*text-decoration: inherit;*/
+}
+
+.header-button:last-of-type {
+    margin-right: 0;
+}
+
+#wrap-header-buttons .header-button:hover {
+    
+    /*border-bottom-left-radius: 25px;*/
+    /*border-bottom-right-radius: 25px;*/
+    box-shadow: 5px 5px 5px #000000;
+    transform: translate(-2px, -2px);
+}
+
+#wrap-logo:hover {
+    box-shadow: -2px 0px 16px white;
+}
+}
